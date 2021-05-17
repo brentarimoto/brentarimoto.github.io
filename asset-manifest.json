@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/brentarimoto.github.io/static/css/main.f8c1ae15.chunk.css",
-    "main.js": "/brentarimoto.github.io/static/js/main.79079cd8.chunk.js",
-    "main.js.map": "/brentarimoto.github.io/static/js/main.79079cd8.chunk.js.map",
-    "runtime-main.js": "/brentarimoto.github.io/static/js/runtime-main.2d2614b9.js",
-    "runtime-main.js.map": "/brentarimoto.github.io/static/js/runtime-main.2d2614b9.js.map",
-    "static/js/2.677e199e.chunk.js": "/brentarimoto.github.io/static/js/2.677e199e.chunk.js",
-    "static/js/2.677e199e.chunk.js.map": "/brentarimoto.github.io/static/js/2.677e199e.chunk.js.map",
-    "index.html": "/brentarimoto.github.io/index.html",
-    "static/css/main.f8c1ae15.chunk.css.map": "/brentarimoto.github.io/static/css/main.f8c1ae15.chunk.css.map",
-    "static/js/2.677e199e.chunk.js.LICENSE.txt": "/brentarimoto.github.io/static/js/2.677e199e.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/brentarimoto.github.io/static/media/pixel-art-japan-street-corner.cd558b04.gif"
+    "main.css": "/static/css/main.3edae03f.chunk.css",
+    "main.js": "/static/js/main.79079cd8.chunk.js",
+    "main.js.map": "/static/js/main.79079cd8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.eed03b5c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.eed03b5c.js.map",
+    "static/js/2.677e199e.chunk.js": "/static/js/2.677e199e.chunk.js",
+    "static/js/2.677e199e.chunk.js.map": "/static/js/2.677e199e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.3edae03f.chunk.css.map": "/static/css/main.3edae03f.chunk.css.map",
+    "static/js/2.677e199e.chunk.js.LICENSE.txt": "/static/js/2.677e199e.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/pixel-art-japan-street-corner.cd558b04.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.2d2614b9.js",
+    "static/js/runtime-main.eed03b5c.js",
     "static/js/2.677e199e.chunk.js",
-    "static/css/main.f8c1ae15.chunk.css",
+    "static/css/main.3edae03f.chunk.css",
     "static/js/main.79079cd8.chunk.js"
   ]
 }
