@@ -1,0 +1,24 @@
+.main__contact-info{
+    color:white;
+    position: relative;
+    width: 100px;
+    height: 100px;
+
+}
+
+.main__anchor-icon.main__contact-icon{
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 10%;
+    height: 80%;
+    width: 80%;
+}
+
+.main__contact-name{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
