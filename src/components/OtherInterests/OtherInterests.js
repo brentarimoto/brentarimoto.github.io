@@ -56,8 +56,8 @@ function OtherInterests() {
             </h3>
             <div className='main__other-interests-acapella'>
               <div className='main__other-interests-acapella-highkey'>
-                <h2 className='main__other-interests-acapella-header'>
-                  <a href='/other-interests' onClick={anchorHandle} target="_blank" rel="noreferrer" className='main__other-interests-vp-anchor'>HighKey</a>
+                <h2 className='main__other-interests-acapella-title'>
+                  <a href='/other-interests' onClick={anchorHandle} target="_blank" rel="noreferrer" className='main__other-interests-acapella-anchor'>HighKey</a>
                   <a href='https://www.instagram.com/highkeyacappella/' className='main__anchor-icon'  target="_blank" rel="noreferrer">
                     <div className='main__icon-background'></div>
                     <img alt='' src={'/img/Instagram_Icon.png'} className='main__icon'></img>
@@ -77,7 +77,7 @@ function OtherInterests() {
                   </div>
               </div>
               <div className='main__other-interests-acapella-vibes'>
-                <h2 className='main__other-interests-acapella-header'>
+                <h2 className='main__other-interests-acapella-title'>
                   <a href='https://thegwvibes.com/' target="_blank" rel="noreferrer" className='main__other-interests-acapella-anchor'>GW Vibes</a>
                   <a href='https://www.youtube.com/user/TheGWVibes' className='main__anchor-icon'  target="_blank" rel="noreferrer">
                     <div className='main__icon-background'></div>

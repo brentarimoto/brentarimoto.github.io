@@ -17,11 +17,12 @@
 }
 
 .main__contact{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-content: center;
+    gap: 10px;
     width: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
 }
 
 @media only screen and (max-width: 850px) {

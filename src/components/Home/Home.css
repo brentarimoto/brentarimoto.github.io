@@ -130,6 +130,7 @@
 /*************** Home Links ***************/
 
 .home__links{
+  margin-right: 25%;
   justify-self: center;
   font-size: 2em;
   grid-area: links;
@@ -173,6 +174,11 @@
   justify-self: center;
 }
 
+
+.home__item-info{
+  padding-left: 25%;
+}
+
 .home__link{
   font-size: .75em;
   justify-self: center;
@@ -208,6 +214,15 @@
   .home__item{
     text-align: center;
   }
+
+  .home__links{
+    margin-right: 0;
+  }
+
+  .home__item-info{
+    padding-left: 0;
+  }
+
 
 
 

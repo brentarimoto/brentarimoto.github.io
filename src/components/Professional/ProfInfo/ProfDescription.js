@@ -2,27 +2,25 @@
 
 
 /*************** OTHER IMPORTS ***************/
+import ProfDescriptionBlock from './ProfDescriptionBlock'
+import {projects} from '../../../data/projects'
 import {professions} from '../../../data/professions'
 
 
 /*************** COMPONENTS ***************/
-function ProfInfo({profession}) {
+function ProfDescription({profession}) {
 
-    const job = professions[profession]
+    const descriptions = profession==='software' ? projects : professions.mechanical.experience
+    console.log(profession, descriptions)
 
     return (
-        <div className='main__professional-desciption'>
-            <h2 className='main__professional-description-header'>Experience:</h2>
-            <div className='main__professional-description-experiences'>
-                <h4 className='main__professional-description-experience-company'>{job.experience.company} | {job.experience.title && job.experience.title}</h4>
-                {job.experience.descriptions.map((description)=>(
-                    <li className='main__professional-description-experience-description' key={description}>{description}</li>
-                ))}
-
-            </div>
+        <div className='main__professional-desciption-div'>
+            {descriptions?.map((project, i)=>(
+                <ProfDescriptionBlock key= {project.title} project={project} i={i}/>
+            ))}
         </div>
     );
   }
 
   /*************** EXPORT ***************/
-  export default ProfInfo;
+  export default ProfDescription;

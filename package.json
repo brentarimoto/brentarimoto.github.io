@@ -2,7 +2,7 @@
   "name": "brent-arimoto-website",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://brentarimoto.github.io/brentarimoto.github.io",
+  "homepage":"http://brentarimoto.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
@@ -18,7 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

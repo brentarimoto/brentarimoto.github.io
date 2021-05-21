@@ -10,7 +10,6 @@ function Project({project}) {
     const [imgType, setImgType] = useState('.png')
     const [hidden, setHidden] = useState(false)
     const [animation, setAnimation] = useState(null)
-    // const [filter, setFilter] = useState('brightness(50%)')
 
     const image = (project.img.length) ? project.img+imgType : 'image-not-found.png'
 

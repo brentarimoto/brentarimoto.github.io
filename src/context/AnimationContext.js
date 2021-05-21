@@ -9,7 +9,9 @@ export default function AnimationProvider({children}){
     const [navBarAnimation, setNavBarAnimation] = useState('1s ease 0s 1 slideInFromTop');
     const [aboutAnimation, setAboutAnimation] = useState('');
     const [profSummaryAnimation, setProfSummaryAnimation] = useState('1s ease 0s 1 scaleUp');
-    const [profInfoAnimation, setProfInfoAnimation] = useState('1s ease 0s 1 slideInFromTop');
+    const [profFadeInAnimation, setProfFadeInAnimation] = useState('1s ease 0s 1 fadeIn');
+    const [profLeftInAnimation, setProfLeftInAnimation] = useState('1s ease 0s 1 slightInFromLeft');
+    const [profRightInAnimation, setProfRightInAnimation] = useState('1s ease 0s 1 slightInFromRight');
     const [profProjectsAnimation, setProfProjectsAnimation] = useState('');
     const [otherInterestsAnimation, setOtherInterestsAnimation] = useState('');
     const [contactAnimation, setContactAnimation] = useState('1s ease 0s 1 scaleUp');
@@ -19,7 +21,9 @@ export default function AnimationProvider({children}){
         navBarAnimation, setNavBarAnimation,
         aboutAnimation, setAboutAnimation,
         profSummaryAnimation, setProfSummaryAnimation,
-        profInfoAnimation, setProfInfoAnimation,
+        profFadeInAnimation, setProfFadeInAnimation,
+        profLeftInAnimation, setProfLeftInAnimation,
+        profRightInAnimation, setProfRightInAnimation,
         profProjectsAnimation, setProfProjectsAnimation,
         otherInterestsAnimation, setOtherInterestsAnimation,
         contactAnimation, setContactAnimation,

@@ -14,7 +14,9 @@ function Home() {
         setNavBarAnimation,
         setAboutAnimation,
         setProfSummaryAnimation,
-        setProfInfoAnimation,
+        setProfFadeInAnimation,
+        setProfLeftInAnimation,
+        setProfRightInAnimation,
         setProfProjectsAnimation,
         setOtherInterestsAnimation,
         setContactAnimation
@@ -27,7 +29,9 @@ function Home() {
         setNavBarAnimation('1s ease 0s 1 slideInFromTop')
         setAboutAnimation('')
         setProfSummaryAnimation('1s ease 0s 1 scaleUp')
-        setProfInfoAnimation('1s ease 0s 1 slideInFromTop')
+        setProfFadeInAnimation('1s ease 0s 1 fadeIn')
+        setProfLeftInAnimation('1s ease 0s 1 slightInFromLeft')
+        setProfRightInAnimation('1s ease 0s 1 slightInFromRight')
         setProfProjectsAnimation('')
         setOtherInterestsAnimation('')
         setContactAnimation('1s ease 0s 1 scaleUp')

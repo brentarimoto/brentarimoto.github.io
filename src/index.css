@@ -1,4 +1,29 @@
-/* TODO Add site wide styles */
+/* Variables */
+
+:root {
+    --turquoiseSurf: rgba(0, 185, 211, 1);
+    --oceanBlue: rgba(15, 120, 190, 1);
+    --electricBlue: rgba(114, 236, 255, 1);
+    --water: rgba(147, 237, 210, 1);
+    --darkElectricBlue: rgba(83, 104, 120,1);
+    --davyGrey: rgba(77, 83, 94, 1);
+    --blackCoral: rgba(88, 93, 107, 1);
+
+
+
+    --mainColor: var(--electricBlue);
+    --secondaryColor: var(--turquoiseSurf);
+
+    --header: var(--electricBlue);
+
+    --backgroundColor: var(--davyGrey);
+    --darkerBackgroundColor: var(--blackCoral);
+
+  }
+
+
+
+/* Add site wide styles */
 .background-dim{
     font-family: Montserrat;
     background-image: url('./img/pixel-art-japan-street-corner.gif');
@@ -20,6 +45,12 @@
     background-color: rgba(8, 8, 8, .65);
 }
 
+
+.main{
+    margin: auto;
+    margin-bottom: 50px;
+}
+
 .main__anchor-icon{
     position: relative;
     margin-left: 10px;
@@ -38,7 +69,7 @@
 }
 
 .main__icon-background:hover{
-    background: cyan;
+    background: var(--secondaryColor);
     -webkit-transition: background-color .3s linear;
     -ms-transition: background-color .3s linear;
     transition: background-color .3s linear;

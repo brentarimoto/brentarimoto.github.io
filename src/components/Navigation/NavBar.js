@@ -23,7 +23,9 @@ function NavBar() {
           navBarAnimation, setNavBarAnimation,
           setAboutAnimation,
           setProfSummaryAnimation,
-          setProfInfoAnimation,
+          setProfFadeInAnimation,
+          setProfLeftInAnimation,
+          setProfRightInAnimation,
           setProfProjectsAnimation,
           setOtherInterestsAnimation,
           setContactAnimation,
@@ -35,7 +37,9 @@ function NavBar() {
     'about': ()=>{setAboutAnimation('')},
     'professional' : ()=>{
                           setProfSummaryAnimation('1s ease 0s 1 scaleUp')
-                          setProfInfoAnimation('1s ease 0s 1 slideInFromTop')
+                          setProfFadeInAnimation('1s ease 0s 1 fadeIn')
+                          setProfLeftInAnimation('1s ease 0s 1 slightInFromLeft')
+                          setProfRightInAnimation('1s ease 0s 1 slightInFromRight')
                           setProfProjectsAnimation('')
     },
     'other-interests': ()=>{setOtherInterestsAnimation('')},
@@ -48,8 +52,10 @@ function NavBar() {
     'about': ()=>{setAboutAnimation('3s ease 0s 1 slideOutToLeft')},
     'professional' : ()=>{
                           setProfSummaryAnimation('1s ease 0s 1 slideOutToTop')
-                          setProfInfoAnimation('1s ease 0s 1 slideOutToTop')
-                          setProfProjectsAnimation('1.5s ease 0s 1 slideOutToBottom')
+                          setProfFadeInAnimation('1s ease 0s 1 fadeOut')
+                          setProfLeftInAnimation('1s ease 0s 1 fadeOut')
+                          setProfRightInAnimation('1s ease 0s 1 fadeOut')
+                          setProfProjectsAnimation('1.5s ease 0s 1 slideOutToTop')
     },
     'other-interests': ()=>{setOtherInterestsAnimation('3s ease 0s 1 slideOutToRight')},
     'contact': ()=>{setContactAnimation('.5s ease 0s 1 scaleDown')}

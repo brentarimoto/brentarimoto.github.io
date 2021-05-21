@@ -1,3 +1,4 @@
+/***** ABOUT *****/
 .main__about-div{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -7,8 +8,12 @@
     margin: auto;
     max-width: 1300px;
     width: 80%;
+    height: 100%;
+    align-items: center;
+    margin-top: 50px;
 }
 
+/***** IMAGE *****/
 .main__about-image-div{
     grid-area: img;
     justify-self: center;
@@ -16,7 +21,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
 }
 
 .main__about-image{
@@ -27,6 +31,8 @@
     opacity: .95;
 }
 
+
+/***** DESCRIPTION *****/
 .main__about-description-div{
     animation: 1s ease 0s 1 slideInFromLeft;
     grid-area: about;
@@ -40,6 +46,7 @@
 }
 
 .main__about-title{
+    color: var(--header);
     padding: 10px 0px;
 }
 
@@ -48,6 +55,7 @@
     color: white
 }
 
+/***** SCREEN *****/
 @media only screen and (max-width: 850px) {
     .main__about-div{
         display: flex;

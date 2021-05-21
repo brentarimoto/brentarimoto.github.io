@@ -5,7 +5,7 @@
     max-width: 275px;
     height: 190px;
     transition: .25s;
-    margin: 50px;
+    margin: 25px 25px;
     overflow: hidden;
     box-shadow: 0 0 2px 2px black;
 }
@@ -46,7 +46,7 @@
     text-align: center;
     color: white;
     word-wrap: break-word;
-    -webkit-text-stroke: .5px lightskyblue;
+    -webkit-text-stroke: .5px lightgreen;
 }
 
 
@@ -54,7 +54,7 @@
     text-align: center;
     color: white;
     word-wrap: break-word;
-    -webkit-text-stroke: .5px lightgreen;
+    -webkit-text-stroke: .5px lightskyblue;
 }
 
 .main__professional--hidden{

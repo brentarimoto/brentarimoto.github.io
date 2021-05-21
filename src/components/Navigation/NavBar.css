@@ -2,7 +2,7 @@
 
 @keyframes slideInFromLeft {
     0% {
-        transform: translateX(-300%);
+        transform: translateX(-200%);
         opacity: 0;
     }
     100% {
@@ -63,15 +63,45 @@
     }
 }
 
-@keyframes scaleDown {
+@keyframes fadeIn {
     0% {
-        transform: scale(1);
+        opacity: 0;
     }
     100% {
-        transform: scale(0);
+        opacity: 1;
     }
 }
 
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slightInFromLeft {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slightInFromRight {
+    0% {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
 /*************** NavBar ***************/
 .navbar{
     color: white;
@@ -110,11 +140,10 @@
 /*************** NavBar Links ***************/
 
 .navbar__name{
-    color: mediumturquoise;
+    color: var(--mainColor);
     font-size: 3.5em;
     animation: 1s ease 0s 1 slideInFromLeft;
     grid-area: name;
-    -webkit-text-stroke: .5px skyblue;
 }
 
 .navbar__home{
@@ -151,14 +180,14 @@
 
 .navbar__link:hover{
     font-size: 130%;
-    color: cyan;
+    color: var(--secondaryColor);
     text-decoration: underline;
     transition: .25s;
 }
 
 .navbar--active{
     font-size: 130%;
-    color: cyan;
+    color: var(--secondaryColor);
     font-weight: bold;
     text-decoration: underline;
     flex-wrap: wrap;
@@ -200,7 +229,7 @@
     }
 
     .navbar__sidebar:hover .navbar__sidebar-hamburger-line{
-        background-color: cyan;
+        background-color: var(--mainColor);
     }
 
     .navbar__sidebar-hamburger{
