@@ -5,7 +5,6 @@ import {useState} from 'react'
 import ProfTab from './ProfTab'
 import ProfInfo from './ProfInfo/ProfInfo'
 import Project from './Project/Project'
-import ContactInfo from '../Contact/ContactInfo/ContactInfo'
 
 import {useAnimationContext} from '../../context/AnimationContext'
 import {projects} from '../../data/projects'
@@ -17,7 +16,7 @@ import './Professional.css'
 /*************** COMPONENTS ***************/
 function Professional() {
 
-    const {profSummaryAnimation, profProjectsAnimation, profFadeInAnimation} = useAnimationContext()
+    const {profSummaryAnimation, profProjectsAnimation} = useAnimationContext()
 
     const [profession, setProfession] = useState('software')
     const options = ['software', 'mechanical']

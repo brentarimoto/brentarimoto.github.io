@@ -11,7 +11,6 @@ import {professions} from '../../../data/professions'
 function ProfDescription({profession}) {
 
     const descriptions = profession==='software' ? projects : professions.mechanical.experience
-    console.log(profession, descriptions)
 
     return (
         <div className='main__professional-desciption-div'>
