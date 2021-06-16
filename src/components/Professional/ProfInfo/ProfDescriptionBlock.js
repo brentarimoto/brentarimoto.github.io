@@ -22,7 +22,7 @@ function ProfDescriptionBlock({project, i}) {
             }
             <div className='main__professional-description-text-div'>
                 <div className='main__professional-description-text-header'>
-                    <a  className='main__professional-description-text-title' href={project.href} target="_blank">
+                    <a className='main__professional-description-text-title' href={project.href} target="_blank">
                         <h3 className='main__professional-description-text-title'>{`${project.title}`}</h3>
                     </a>
                     |

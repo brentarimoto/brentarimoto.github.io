@@ -1,5 +1,7 @@
 /*************** REACT IMPORTS ***************/
 import {useState} from 'react'
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 /*************** OTHER IMPORTS ***************/
 import ProfTab from './ProfTab'
@@ -11,9 +13,11 @@ import {projects} from '../../data/projects'
 import {contactMe} from '../../data/contactMeInfo'
 
 import './Professional.css'
-
+import 'swiper/swiper-bundle.css';
 
 /*************** COMPONENTS ***************/
+SwiperCore.use([Navigation, Pagination, Scrollbar])
+
 function Professional() {
 
     const {profSummaryAnimation, profProjectsAnimation} = useAnimationContext()
@@ -24,21 +28,21 @@ function Professional() {
     return (
         <div className='main__professional'>
             <div className='main__professional-projects-div' style={{animation:profProjectsAnimation}}>
-                {/* <h2 className='main__professional-projects-header'>Full Stack Projects</h2> */}
-                <div className='main__professional-projects'>
-                    {projects.map((project, i)=>(
-                        <a
-                            className='main__professional-project-div'
-                            key={project.title}
-                            style={{animation:`${i/3+1}s ease 0s 1 scaleUp`}}
-                            href={project.href}
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <Project project={project}/>
-                        </a>
-                    ))}
-                </div>
+                <Swiper
+                breakpoints={{650:{slidesPerView: 1}}, {1300:{slidesPerView: 2}}}
+                className='main__professional-projects'
+                style = {{width: '100%', height: '100%'}}
+                navigation
+                pagination={{clickable: true}}
+                scrollbar={{draggable: true}}
+                slidesPerView={1}
+                >
+                {projects.map((project, i)=>(
+                    <SwiperSlide key={project.title} className='main__professional-project-container'>
+                        <Project project={project} i={i}/>
+                    </SwiperSlide>
+                ))}
+                </Swiper>
             </div>
             <div className='main__professional-tab-div'>
                 {options.map((field, i)=>(

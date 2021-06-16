@@ -42,7 +42,16 @@
     position:absolute;
     min-width: 100%;
     min-height: 100%;
-    background-color: rgba(8, 8, 8, .65);
+    background-color: rgba(8, 8, 8, .80);
+    transition: 1s;
+}
+
+.all-content-home{
+    position:absolute;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(8, 8, 8, .30);
+    transition: 1s;
 }
 
 

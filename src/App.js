@@ -1,5 +1,5 @@
 /*************** REACT IMPORTS ***************/
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, useLocation } from 'react-router-dom'
 
 /*************** OTHER IMPORTS ***************/
 import NavBar from './components/Navigation/NavBar'
@@ -15,11 +15,12 @@ import {useAnimationContext} from './context/AnimationContext'
 
 /*************** COMPONENTS ***************/
 function App() {
+  const location = useLocation()
   const {overflow} = useAnimationContext()
 
   return (
     <div className='background-dim' style={{overflow: overflow}}>
-      <div className='all-content'>
+      <div className={location.pathname==='/' ? 'all-content-home' : 'all-content'}>
         <Switch>
 
           <Route exact path='/'>

@@ -6,7 +6,7 @@ import {useState} from 'react'
 import './Project.css'
 
 /*************** COMPONENTS ***************/
-function Project({project}) {
+function Project({project, i}) {
     const [imgType, setImgType] = useState('.png')
     const [hidden, setHidden] = useState(false)
     const [animation, setAnimation] = useState(null)
@@ -35,20 +35,31 @@ function Project({project}) {
 
 
     return (
-        <>
-            <img
-                className='main__professional-project-image'
-                name={image}
-                src={`/img/${image}`}
-                alt=''
-                onMouseEnter={mouseEnter}
-                onMouseLeave={mouseLeave}
-            ></img>
+        <div
+            className='main__professional-project-div'
+            style={{animation:`${i/3+1}s ease 0s 1 scaleUp`}}
+        >
+            <a
+            className='main__professional-project-anchor'
+            style={{animation:`${i/3+1}s ease 0s 1 scaleUp`}}
+            href={project.href}
+            target="_blank"
+            rel="noreferrer"
+            >
+                <img
+                    className='main__professional-project-image'
+                    name={image}
+                    src={`/img/${image}`}
+                    alt=''
+                    onMouseEnter={mouseEnter}
+                    onMouseLeave={mouseLeave}
+                ></img>
+            </a>
             <div className={`main__professional-project-info ${hidden ? 'main__professional--hidden' : ''}`} style={{animation:animation}}>
                 <h2 className={`main__professional-project-title`}>{project.title}</h2>
                 <h3 className={`main__professional-project-techs`}>{project.technologies}</h3>
             </div>
-        </>
+        </div>
     );
   }
 
