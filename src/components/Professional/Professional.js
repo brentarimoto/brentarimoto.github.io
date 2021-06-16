@@ -29,7 +29,7 @@ function Professional() {
         <div className='main__professional'>
             <div className='main__professional-projects-div' style={{animation:profProjectsAnimation}}>
                 <Swiper
-                breakpoints={{650:{slidesPerView: 1}}, {1300:{slidesPerView: 2}}}
+                breakpoints={{1000:{slidesPerView: 2}}}
                 className='main__professional-projects'
                 style = {{width: '100%', height: '100%'}}
                 navigation

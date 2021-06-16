@@ -319,6 +319,12 @@
     }
 }
 
+@media only screen and (min-width: 1001px){
+    .swiper-container {
+      width: 800px !important;
+    }
+}
+
 
 @media only screen and (min-width: 1301px) {
     .swiper-container {
