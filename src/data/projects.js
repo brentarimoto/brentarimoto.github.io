@@ -9,11 +9,11 @@ export const projects = [
         ],
         href: 'https://log-on.herokuapp.com/',
         img: 'LogOn',
-        technologies: ' React / Redux / Python / Flask / Websockets / postgresSQL / AWS / Heroku'
+        technologies: ' React / Redux / Python / Flask / Websockets / PostgreSQL / AWS / Heroku'
     },
     {
         title: 'Woof Woof',
-        summary:'Family-friendly social media site, where users can play fun games with and message other users.',
+        summary:'Chat application that allows people to post messages to public channels or send private direct messages.',
         description: [
             'Built a database with many to many relationships between users and channels that heavily decrease the necessary number of queries to allow for simpler and more efficient API calls.',
             'Developed a smooth responsive site by designing an object based Redux store that fetches user messages and profile information, only when necessary, further boosting load times.',
@@ -21,7 +21,7 @@ export const projects = [
         ],
         href: 'https://woofwoof-app.herokuapp.com/',
         img: 'WoofWoof',
-        technologies: ' React / Redux / Python / Flask / Websockets / postgresSQL / AWS / Heroku'
+        technologies: ' React / Redux / Python / Flask / Websockets / PostgreSQL / AWS / Heroku'
     },
     {
         title: 'Songaku',
@@ -33,7 +33,7 @@ export const projects = [
         ],
         href: 'https://songaku.herokuapp.com/',
         img: 'Songaku',
-        technologies: ' React / Redux / Javascript / Express / postgresSQL / AWS / Heroku'
+        technologies: ' React / Redux / Javascript / Express / PostgreSQL / AWS / Heroku'
     },
     {
         title: 'GoodGamesGG',
@@ -45,6 +45,6 @@ export const projects = [
         ],
         href: 'https://goodgamesgg.herokuapp.com/',
         img: 'goodgamesgg',
-        technologies: 'Javascript / Express / Pug / postgresSQL / Heroku'
+        technologies: 'Javascript / Express / Pug / PostgreSQL / Heroku'
     },
 ]

@@ -1,6 +1,6 @@
 /*************** REACT IMPORTS ***************/
 import {useState} from 'react'
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 /*************** OTHER IMPORTS ***************/
@@ -50,7 +50,7 @@ function Professional() {
                 ))}
             </div>
             <div className='main__professional-links'>
-                {contactMe.map((website)=>{
+                {contactMe.map((website) => {
                     if (website.name !=='Youtube'){
                         return (<a key = {website.link} href={website.link} className='main__anchor-icon main__professional-icon'  target="_blank" rel="noreferrer" style={{animation: profSummaryAnimation}}>
                             <div className='main__icon-background'></div>
