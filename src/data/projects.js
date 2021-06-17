@@ -3,7 +3,7 @@ export const projects = [
         title: 'Log On',
         summary:'Family-friendly social media site, where users can play fun games with and message other users.',
         description: [
-            'Using Websockets, established socket connections to send message and game information, allowing users to chat or play games with each other in real time. ',
+            'Utilizing Websockets, established socket connections to send message and game information, allowing users to chat or play games with each other in real-time. ',
             'Created a Game class of Connect Four that lets two users play a full game until a win, loss or tie. ',
             'Implemented small algorithms to update the necessary database values, based on game results, to automatically keep track of users’ game statistics.',
         ],
@@ -37,11 +37,11 @@ export const projects = [
     },
     {
         title: 'GoodGamesGG',
-        summary:'',
+        summary:'Social cataloging website where users can find, track, and organize existing video games.',
         description: [
-            'GoodGamesGG, a Goodreads inspired project, is a social cataloging website that allows users to search its database of videogames. ',
-            'Users can signup/login to create lists of videogames to help keep track of and organize their videogame history. ',
-            'Users will also receive suggestions based off of their preferences. ',
+            'Designed back to frontend implementation of the games route using Express and Pug to display users with all the games, and their information, that exists in the database.',
+            'With a merge-sort algorithm, sorted video game objects based off of a user selected order.',
+            'Making use of Pug, and CSS, developed a 5 star rating system that users can submit and in real-time, using Ajax, see a game\'s overall rating update.',
         ],
         href: 'https://goodgamesgg.herokuapp.com/',
         img: 'goodgamesgg',
