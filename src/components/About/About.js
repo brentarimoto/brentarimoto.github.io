@@ -9,10 +9,9 @@ import './About.css'
 function About() {
   const { aboutAnimation } = useAnimationContext()
 
-  const GeneralDescription = `Previously a mechanical engineer, now a software engineer, I've always been
-  interested in building and understanding how things work. Software development, specifically, lets you
-  explore designs on a whole new level. Solving puzzles, and creating those intricate systems has and always
-  will be fun for me. Now, I just have the opportunity pursue it as a career.`
+  const GeneralDescription = `As a mechanical engineer turned software engineer, I've always been interested in building and understanding how things work.
+  Software development, specifically, lets you explore designs on a whole new level. Solving puzzles, and creating those intricate systems has and always will be fun for me.
+  Now, I just have the opportunity pursue it as a career.`
 
   const BusinessDescription = `If you have any business queries or just want to say hello,
   feel free to use any information in the `
