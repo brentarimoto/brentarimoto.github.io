@@ -1,5 +1,5 @@
 /*************** REACT IMPORTS ***************/
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 
 
 /*************** OTHER IMPORTS ***************/
@@ -7,31 +7,37 @@ import './Project.css'
 
 /*************** COMPONENTS ***************/
 function Project({project, i}) {
-    const [imgType, setImgType] = useState('.png')
+    const [img, setImg] = useState('/img/image-not-found.png')
     const [hidden, setHidden] = useState(false)
     const [animation, setAnimation] = useState(null)
 
-    const image = (project.img.length) ? project.img+imgType : 'image-not-found.png'
+    useEffect(()=>{
+        if (project.img){
+            setImg(project.img)
+        }
+    },[])
 
     const mouseEnter=async(e)=>{
-        if(image!=='image-not-found.png'){
+        if(img!=='/img/image-not-found.png'){
             setAnimation('.5s ease 0s 1 slideOutToBottom')
             setTimeout(()=>{
-                setImgType('.gif')
+                setImg(project.gif)
                 setHidden(true)
             },100)
         }
     }
 
     const mouseLeave = (e)=>{
-        if(image!=='image-not-found.png'){
+        if(img!=='image-not-found.png'){
             setTimeout(()=>{
                 setAnimation('.5s ease 0s 1 slideInFromBottom')
-                setImgType('.png')
+                setImg(project.img)
                 setHidden(false)
             },100)
         }
     }
+
+
 
 
     return (
@@ -48,8 +54,8 @@ function Project({project, i}) {
             >
                 <img
                     className='main__professional-project-image'
-                    name={image}
-                    src={`/img/${image}`}
+                    name={img}
+                    src={img}
                     alt=''
                     onMouseEnter={mouseEnter}
                     onMouseLeave={mouseLeave}

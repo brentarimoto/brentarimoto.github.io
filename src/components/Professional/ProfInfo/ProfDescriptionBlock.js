@@ -16,7 +16,7 @@ function ProfDescriptionBlock({project, i}) {
         <div className='main__professional-description' style={{animation: i%2===0 ? profLeftInAnimation : profRightInAnimation}}>
             { i%2===0 &&
                 <img className='main__professional-description-image'
-                    src={`/img/${project.img}.png`}
+                    src={project.img}
                     alt=''
                 ></img>
             }
@@ -38,7 +38,7 @@ function ProfDescriptionBlock({project, i}) {
             </div>
             { i%2!==0 &&
                 <img className='main__professional-description-image'
-                    src={`/img/${project.img}.png`}
+                    src={project.img}
                     alt=''
                 ></img>
             }

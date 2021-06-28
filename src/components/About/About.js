@@ -19,7 +19,7 @@ function About() {
   return (
       <div className='main__about-div' style={{animation:aboutAnimation}}>
         <div className='main__about-item main__about-image-div'>
-          <img className='main__about-item main__about-image' src={`/img/Headshot.jpg`} alt=''></img>
+          <img className='main__about-item main__about-image' src='https://brentarimoto.s3.us-west-1.amazonaws.com/Headshot.jpg' alt=''></img>
         </div>
         <div className='main__about-item main__about-description-div'>
           <h1 className='main__about-item main__about-title'> Hi, I'm Brent Arimoto </h1>

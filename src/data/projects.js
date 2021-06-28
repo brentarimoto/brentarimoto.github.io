@@ -8,7 +8,8 @@ export const projects = [
             'Implemented small algorithms to update the necessary database values, based on game results, to automatically keep track of users’ game statistics.',
         ],
         href: 'https://log-on.herokuapp.com/',
-        img: 'LogOn',
+        img: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/LogOn.png',
+        gif: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/LogOn.gif',
         technologies: ' React / Redux / Python / Flask / Websockets / PostgreSQL / AWS / Heroku'
     },
     {
@@ -20,7 +21,8 @@ export const projects = [
             'Improved user experience by incorporating, in React, a modal based user profile that grants access to a user’s information without needing to reload to another page.',
         ],
         href: 'https://woofwoof-app.herokuapp.com/',
-        img: 'WoofWoof',
+        img: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/WoofWoof.png',
+        gif: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/WoofWoof.gif',
         technologies: ' React / Redux / Python / Flask / Websockets / PostgreSQL / AWS / Heroku'
     },
     {
@@ -32,7 +34,8 @@ export const projects = [
             'Through the use of simple selections and buttons, streamlined user to music interaction by dispatching per music updates to the database and redux store.',
         ],
         href: 'https://songaku.herokuapp.com/',
-        img: 'Songaku',
+        img: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/Songaku.png',
+        gif: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/Songaku.gif',
         technologies: ' React / Redux / Javascript / Express / PostgreSQL / AWS / Heroku'
     },
     {
@@ -44,7 +47,8 @@ export const projects = [
             'Making use of Pug, and CSS, developed a 5 star rating system that users can submit and in real-time, using Ajax, see a game\'s overall rating update.',
         ],
         href: 'https://goodgamesgg.herokuapp.com/',
-        img: 'goodgamesgg',
+        img: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/goodgamesgg.png',
+        gif: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/goodgamesgg.gif',
         technologies: 'Javascript / Express / Pug / PostgreSQL / Heroku'
     },
 ]

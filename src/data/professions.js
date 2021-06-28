@@ -18,7 +18,7 @@ export const professions = {
             [{
                 title:'Ayoob-&-Peery',
                 position: 'Mechanical Designer',
-                img: 'Ayoob-&-Peery',
+                img: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/Ayoob-%26-Peery.png',
                 href: 'http://www.ayoobpeery.com/',
                 description: [
                     'Design efficient, code compliant, and minimal cost fire protection/plumbing systems for new and existing construction',
