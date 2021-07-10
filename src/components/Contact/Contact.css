@@ -34,5 +34,10 @@
         margin-top: 5%;
     }
 
+    .main__contact{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
 
 }

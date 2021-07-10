@@ -1,7 +1,7 @@
 /* Variables */
 
 :root {
-    --turquoiseSurf: rgba(0, 185, 211, 1);
+    --turquoiseSurf: rgb(5, 226, 255);
     --oceanBlue: rgba(15, 120, 190, 1);
     --electricBlue: rgba(114, 236, 255, 1);
     --water: rgba(147, 237, 210, 1);
@@ -98,15 +98,15 @@
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
 
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background-color: rgba(8, 8, 8, .80);
-  }
+/* Track */
+::-webkit-scrollbar-track {
+background-color: rgba(8, 8, 8, .80);
+}
 
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgba(64, 64, 64, .9);
-    border-radius: 20px;
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgba(64, 64, 64, .9);
+border-radius: 20px;
+}

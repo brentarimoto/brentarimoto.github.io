@@ -198,7 +198,7 @@
     display: grid;
     grid-template-columns: min-content min-content 1fr;
     align-items: center;
-    border-bottom: 1.5px solid rgba(120,120,120,.50)
+    margin-bottom: 4px;
 }
 
 .main__professional-description-text-title{
@@ -207,6 +207,14 @@
     margin-right: 5px;
     font-size: 20px;
     white-space: nowrap;
+}
+
+.main__professional-description-text-repo{
+    margin-left: 7px;
+    font-size: 17px;
+    -webkit-text-stroke: .5px lightskyblue;
+    font-size: 90%;
+    text-decoration: none;
 }
 
 .main__professional-description-text-title:hover{
@@ -218,10 +226,10 @@
 }
 
 .main__professional-description-text-extra{
-    margin-left: 7px;
     font-size: 17px;
     -webkit-text-stroke: .5px lightskyblue;
     font-size: 90%;
+    border-bottom: 1.5px solid rgba(120,120,120,.50)
 }
 
 .main__professional-description-text-summary{

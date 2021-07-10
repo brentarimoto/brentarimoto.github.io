@@ -126,6 +126,7 @@ function NavBar() {
   const handleResize= ()=>{
     if(window.innerWidth>850){
       setLinkDisplay('grid')
+      setOverflow('auto')
       setLinksAnimation('')
     } else {
       if(document.querySelector('.navbar__links')?.style.display !=='flex'){

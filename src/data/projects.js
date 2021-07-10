@@ -10,7 +10,8 @@ export const projects = [
         href: 'https://log-on.herokuapp.com/',
         img: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/LogOn.png',
         gif: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/LogOn.gif',
-        technologies: ' React / Redux / Python / Flask / Websockets / PostgreSQL / AWS / Heroku'
+        technologies: ' React / Redux / Python / Flask / Websockets / PostgreSQL / AWS / Heroku',
+        github: 'https://github.com/brentarimoto/Log-On'
     },
     {
         title: 'Woof Woof',
@@ -23,7 +24,8 @@ export const projects = [
         href: 'https://woofwoof-app.herokuapp.com/',
         img: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/WoofWoof.png',
         gif: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/WoofWoof.gif',
-        technologies: ' React / Redux / Python / Flask / Websockets / PostgreSQL / AWS / Heroku'
+        technologies: ' React / Redux / Python / Flask / Websockets / PostgreSQL / AWS / Heroku',
+        github: 'https://github.com/CodingInRhythm/woof_woof'
     },
     {
         title: 'Songaku',
@@ -36,7 +38,8 @@ export const projects = [
         href: 'https://songaku.herokuapp.com/',
         img: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/Songaku.png',
         gif: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/Songaku.gif',
-        technologies: ' React / Redux / Javascript / Express / PostgreSQL / AWS / Heroku'
+        technologies: ' React / Redux / Javascript / Express / PostgreSQL / AWS / Heroku',
+        github: 'https://github.com/brentarimoto/Songaku'
     },
     {
         title: 'GoodGamesGG',
@@ -49,6 +52,7 @@ export const projects = [
         href: 'https://goodgamesgg.herokuapp.com/',
         img: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/goodgamesgg.png',
         gif: 'https://brentarimotoprojects.s3.us-west-1.amazonaws.com/goodgamesgg.gif',
-        technologies: 'Javascript / Express / Pug / PostgreSQL / Heroku'
+        technologies: 'Javascript / Express / Pug / PostgreSQL / Heroku',
+        github: 'https://github.com/jiezheng2020/GoodGamesGG'
     },
 ]

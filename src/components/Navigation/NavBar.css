@@ -260,7 +260,11 @@
         flex-direction: column;
         align-items: center;
         z-index: 10 !important;
-        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    .navbar__links::-webkit-scrollbar {
+        display: none;
     }
 
     .navbar__link{

@@ -22,12 +22,13 @@ function ProfDescriptionBlock({project, i}) {
             }
             <div className='main__professional-description-text-div'>
                 <div className='main__professional-description-text-header'>
-                    <a className='main__professional-description-text-title' href={project.href} target="_blank" rel='noreferrer'>
+                    <a className='main__professional-description-text-title' href={project.href} target="_blank" rel='noopener noreferrer'>
                         <h3 className='main__professional-description-text-title'>{`${project.title}`}</h3>
                     </a>
                     |
-                    <h3 className='main__professional-description-text-extra'>{project.technologies ? `${project.technologies}` : `${project.position}`}</h3>
+                    {project && (<a className='main__professional-description-text-repo' href={project.github} target="_blank" rel="noopener noreferrer"><h3>(Github Repo)</h3></a>)}
                 </div>
+                <h3 className='main__professional-description-text-extra'>{project.technologies ? `${project.technologies}` : `${project.position}`}</h3>
                 {project.summary &&
                 <div className='main__professional-description-text-summary-div'>
                     <h3 className='main__professional-description-text-summary'>{project.summary}</h3>
