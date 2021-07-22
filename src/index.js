@@ -14,9 +14,9 @@ import AnimationProvider from './context/AnimationContext'
 const Root = ()=>{
   return(
     <AnimationProvider>
-      <HashRouter>
+      <BrowserRouter>
         <App />
-      </HashRouter>
+      </BrowserRouter>
     </AnimationProvider>
   )
 }
