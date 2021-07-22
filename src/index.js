@@ -1,7 +1,7 @@
 /*************** REACT IMPORTS ***************/
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 
 /*************** OTHER IMPORTS ***************/
 import './index.css';
@@ -14,9 +14,9 @@ import AnimationProvider from './context/AnimationContext'
 const Root = ()=>{
   return(
     <AnimationProvider>
-      <BrowserRouter>
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </AnimationProvider>
   )
 }
